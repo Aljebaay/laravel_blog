@@ -19,16 +19,16 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100 h-screen antialiased leading-none font-sans">
+<body class="h-screen font-sans antialiased leading-none bg-gray-100">
     <div id="app">
-        <header class="bg-gray-700 py-6">
-            <div class="container mx-auto flex justify-between items-center px-6">
+        <header class="py-6 bg-gray-700">
+            <div class="container flex items-center justify-between px-6 mx-auto">
                 <div>
                     <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
-                <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
+                <nav class="space-x-4 text-sm text-gray-300 sm:text-base">
                     <a class="no-underline hover:underline" href="{{ route('blog.index') }}">Blog</a>
                     @guest
                         <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
